@@ -2,7 +2,7 @@ FROM node:alpine3.16
 
 ENV PATH="$PATH:/npm/node_modules/.bin"
 
-RUN apk --update --no-cache add bash curl git git-lfs openssh
+RUN apk --update --no-cache add bash curl git git-lfs openssh grep
 
 COPY ./package.json ./package-lock.json /npm/
 
